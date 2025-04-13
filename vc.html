@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeckInsight | Analyse de Pitch Decks par IA</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+<body class="bg-white min-h-screen ">
+  <nav class="py-6 px-8 md:px-16 flex justify-between items-center border-b border-gray-100">
+    <div class="flex items-center">
+      <span class="text-black font-bold text-4xl">Deck<span class="text-blue-600">Insight</span></span>
+    </div>
+    <div class="hidden md:flex space-x-8">
+      <a href="#features" class="text-gray-800 font-semibold hover:text-blue-600 transition font-medium">Fonctionnalités</a>
+      <a href="#about" class="text-gray-800 font-semibold hover:text-blue-600 transition font-medium">À propos</a>
+    </div>
+    <div class="flex items-center space-x-4">
+      <a href="contact.html" 
+      class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+     Rejoindre la liste d'attente
+   </a>    
+  </div>
+  </nav>
+
+  <header class="px-8 md:px-1 py-16 max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row items-center">
+      <!-- Texte du Hero -->
+      <div class="md:w-4/10 mb-12 md:mb-0 pr-0 md:pr-20 mt-45">
+        <h2 class="font-semibold tracking-tight text-balance text-black sm:text-6xl mb-5">Trouvez votre prochaine licorne 🦄</h2>
+        <p class="text-gray-600 font-semibold text-xl mb-8">
+          Trop de pitch decks à lire ? Notre IA les analyse, les classe et vous présente les plus prometteurs.
+        </p>
+  
+        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+          <a href="contact.html" 
+          class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+         Rejoindre la liste d'attente
+       </a>    
+            </div>
+      </div>
+  
+      <!-- Image à droite -->
+      <div class="md:w-6/10 mb-20">
+        <img src="DeckInsight Dashboard.png" alt="Aperçu du dashboard" class="rounded-xl shadow-xl w-full h-auto object-cover" />
+      </div>
+      
+    </div>
+
+  </header>
+
+  
+  
+
+  
+
+  <section id="features" class="py-24 px-8 md:px-16">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4 text-black">Fonctionnalités <span class="text-blue-600">Principales</span></h2>
+        <p class="text-gray-600 text-xl max-w-3xl mx-auto">Conçu pour optimiser votre processus d'analyse de pitch decks.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-xl border border-gray-100 hover:shadow-lg transition">
+          <div class="text-blue-600 text-3xl mb-4">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h3 class="text-xl font-bold text-black mb-2">Traitement en Masse</h3>
+          <p class="text-gray-600">Analysez jusqu'à 100 pitch decks simultanément avec notre moteur d'IA avancé.</p>
+        </div>
+        
+        <div class="bg-white p-8 rounded-xl border border-gray-100 hover:shadow-lg transition">
+          <div class="text-blue-600 text-3xl mb-4">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3 class="text-xl font-bold text-black mb-2">Classement Intelligent</h3>
+          <p class="text-gray-600">Obtenez un classement basé sur vos critères d'investissement et vos deals réussis.</p>
+        </div>
+        
+        <div class="bg-white p-8 rounded-xl border border-gray-100 hover:shadow-lg transition">
+          <div class="text-blue-600 text-3xl mb-4">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
+          <h3 class="text-xl font-bold text-black mb-2">Analyse des Risques</h3>
+          <p class="text-gray-600">Identifiez automatiquement les points d'attention et les informations manquantes.</p>
+        </div>
+        
+        <div class="bg-white p-8 rounded-xl border border-gray-100 hover:shadow-lg transition">
+          <div class="text-blue-600 text-3xl mb-4">
+            <i class="fas fa-exchange-alt"></i>
+          </div>
+          <h3 class="text-xl font-bold text-black mb-2">Analyse Comparative</h3>
+          <p class="text-gray-600">Comparez les startups côte à côte avec des métriques standardisées.</p>
+        </div>
+        
+        <div class="bg-white p-8 rounded-xl border border-gray-100 hover:shadow-lg transition">
+          <div class="text-blue-600 text-3xl mb-4">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3 class="text-xl font-bold text-black mb-2">Scoring Personnalisé</h3>
+          <p class="text-gray-600">Adaptez l'IA à votre thèse d'investissement pour des insights sur mesure.</p>
+        </div>
+        
+        <div class="bg-white p-8 rounded-xl border border-gray-100 hover:shadow-lg transition">
+          <div class="text-blue-600 text-3xl mb-4">
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <h3 class="text-xl font-bold text-black mb-2">Résumé Exécutif</h3>
+          <p class="text-gray-600">Obtenez des résumés concis et les métriques clés pour une prise de décision rapide.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="bg-white">
+    <div class="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+      <div class="relative isolate overflow-hidden bg-white px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+        <svg viewBox="0 0 1024 1024" class="absolute top-1/2 left-1/2 -z-10 size-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0" aria-hidden="true">
+          <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fill-opacity="0.7" />
+          <defs>
+            <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+              <stop stop-color="#3B82F6" />       <!-- Bleu clair (tailwind blue-500) -->
+              <stop offset="1" stop-color="#1E3A8A" /> <!-- Bleu foncé (tailwind blue-900) -->
+            </radialGradient>
+            
+          </defs>
+        </svg>
+        <div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+          <h2 class="text-3xl font-semibold tracking-tight text-balance text-black sm:text-4xl">Découvrez une nouvelle approche du screening VC</h2>
+          <p class="mt-6 text-lg/8 text-pretty text-gray-900">Inscrivez-vous pour être informé des prochaines étapes et tester DeckInsight en avant-première</p>
+          <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+            <a href="contact.html" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-xs hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Rejoindre la liste d'attente</a>
+          </div>
+        </div>
+        <div class="relative mt-16 h-80 lg:mt-8">
+          <img class="absolute top-0 left-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10" src="DeckInsight Dashboard.png" alt="App screenshot" width="1824" height="1080">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+  <section id="about" class="bg-white py-24 px-8 md:px-16">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4 text-black">À <span class="text-blue-600">Propos</span></h2>
+      </div>
+      
+      <div class="bg-white rounded-2xl shadow-2xl overflow-hidden p-8 md:p-12">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-3/3 md:pl-8 p-10">
+            <h3 class="text-2xl font-bold text-black mb-4">Andrea Zanin</h3>
+            <p class="text-black font-semi-bold mb-4">Étudiant passionné par l’intelligence artificielle, l’entrepreneuriat et le capital-risque, j’ai conçu DeckInsight comme une proposition alternative pour repenser une partie du processus de screening des investisseurs</p>
+            <p class="text-black font-semi-bold mb-6">Ce projet est né de mes premières expériences dans l’écosystème startup et de ma volonté de mieux comprendre les défis quotidiens rencontrés par les VCs.</p>
+            <p class="text-black font-semi-bold mb-6">Je serais très intéressé par vos retours. N’hésitez pas à me faire part de vos remarques, questions ou suggestions à l’adresse suivante : zaninandrea12@gmail.com</p>
+            <div class="flex space-x-4">
+              <a href="https://www.linkedin.com/in/andrea-k-zanin/" class="text-gray-400 hover:text-blue-600 transition"><i class="fab fa-linkedin text-6xl"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="bg-white py-16 px-8 md:px-16 border-t border-gray-100">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between">
+        <div class="mb-10 md:mb-0">
+          <span class="text-black font-bold text-2xl">Deck<span class="text-blue-600">Insight</span></span>
+          <p class="text-gray-500 mt-4 max-w-xs">Analyse de pitch decks par IA pour les VCs.</p>
+          <div class="flex space-x-4 mt-6">
+            <a href="https://www.linkedin.com/in/andrea-k-zanin/" class="text-gray-400 hover:text-blue-600 transition"><i class="fab fa-linkedin text-lg"></i></a>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-10">
+          <div>
+            <h3 class="font-bold text-black mb-4">Navigation</h3>
+            <ul class="space-y-2">
+              <li><a href="#features" class="text-gray-500 hover:text-blue-600 transition">Fonctionnalités</a></li>
+              <li><a href="#about" class="text-gray-500 hover:text-blue-600 transition">À propos</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-bold text-black mb-4">Contact</h3>
+            <ul class="space-y-2">
+              <li><a href="mailto:zaninandrea12@gmail.com" class="text-gray-500 hover:text-blue-600 transition">Email</a></li>
+              <li><a href="https://www.linkedin.com/in/andrea-k-zanin/" class="text-gray-500 hover:text-blue-600 transition">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-100 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-500 text-sm">© 2025 DeckInsight. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const deckUpload = document.getElementById('deck-upload');
+      const uploadLabel = deckUpload.parentElement;
+      
+      ['dragover', 'dragenter'].forEach(eventName => {
+        uploadLabel.addEventListener(eventName, (e) => {
+          e.preventDefault();
+          uploadLabel.classList.add('border-blue-600', 'bg-blue-50');
+        });
+      });
+      
+      ['dragleave', 'dragend', 'drop'].forEach(eventName => {
+        uploadLabel.addEventListener(eventName, (e) => {
+          e.preventDefault();
+          uploadLabel.classList.remove('border-blue-600', 'bg-blue-50');
+        });
+      });
+      
+      deckUpload.addEventListener('change', function(e) {
+        if (this.files.length) {
+          const fileCount = this.files.length;
+          const fileInfo = uploadLabel.querySelector('p.text-sm');
+          if (fileInfo) {
+            fileInfo.textContent = `Sélectionné: ${fileCount} fichier${fileCount > 1 ? 's' : ''}`;
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
