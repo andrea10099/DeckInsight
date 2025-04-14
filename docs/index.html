@@ -10,11 +10,6 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-
-
 </head>
 <body class="bg-white min-h-screen ">
   <nav class="py-6 px-8 md:px-16 flex justify-between items-center border-b border-gray-100">
@@ -34,6 +29,7 @@
   </nav>
 
   <header class="px-8 md:px-1 py-16 max-w-7xl mx-auto">
+    
     <div class="flex flex-col md:flex-row items-center">
       <!-- Texte du Hero -->
       <div class="md:w-4/10 mb-12 md:mb-0 pr-0 md:pr-20 mt-45">
@@ -60,9 +56,16 @@
   </header>
 
   
-  
+  <section class="bg-white px-8 md:px-1 py-16 max-w-7xl mx-auto">
+    <div class="flex flex-col items-center text-center mb-4">
+      <h3 class="font-bold text-black font-sans text-4xl mb-4">Essayez avec un deck, c'est gratuit.</h3>
+    </div>
 
-  
+    <iframe data-tally-src="https://tally.so/embed/mDWZKX?hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="190" frameborder="0" marginheight="0" marginwidth="0" title="File Upload"></iframe>
+    <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>  </section>
+
+
+
 
   <section id="features" class="py-24 px-8 md:px-16">
     <div class="max-w-7xl mx-auto">
@@ -164,7 +167,7 @@
         <div class="flex flex-col md:flex-row items-center">
           <div class="md:w-3/3 md:pl-8 p-10">
             <h3 class="text-2xl font-bold text-black mb-4">Andrea Zanin</h3>
-            <p class="text-black font-semi-bold mb-4">Étudiant passionné par l’intelligence artificielle, l’entrepreneuriat et le capital-risque, j’ai conçu DeckInsight comme une proposition pour faciliter et accélérer une partie du processus de screening.</p>
+            <p class="text-black font-semi-bold mb-4">Étudiant passionné par l’intelligence artificielle, l’entrepreneuriat et le capital-risque, j’ai conçu DeckInsight comme une proposition alternative pour repenser une partie du processus de screening des investisseurs</p>
             <p class="text-black font-semi-bold mb-6">Ce projet est né de mes premières expériences dans l’écosystème startup et de ma volonté de mieux comprendre les défis quotidiens rencontrés par les VCs.</p>
             <p class="text-black font-semi-bold mb-6">Je serais très intéressé par vos retours. N’hésitez pas à me faire part de vos remarques, questions ou suggestions à l’adresse suivante : zaninandrea12@gmail.com</p>
             <div class="flex space-x-4">
@@ -213,35 +216,5 @@
     </div>
   </footer>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const deckUpload = document.getElementById('deck-upload');
-      const uploadLabel = deckUpload.parentElement;
-      
-      ['dragover', 'dragenter'].forEach(eventName => {
-        uploadLabel.addEventListener(eventName, (e) => {
-          e.preventDefault();
-          uploadLabel.classList.add('border-blue-600', 'bg-blue-50');
-        });
-      });
-      
-      ['dragleave', 'dragend', 'drop'].forEach(eventName => {
-        uploadLabel.addEventListener(eventName, (e) => {
-          e.preventDefault();
-          uploadLabel.classList.remove('border-blue-600', 'bg-blue-50');
-        });
-      });
-      
-      deckUpload.addEventListener('change', function(e) {
-        if (this.files.length) {
-          const fileCount = this.files.length;
-          const fileInfo = uploadLabel.querySelector('p.text-sm');
-          if (fileInfo) {
-            fileInfo.textContent = `Sélectionné: ${fileCount} fichier${fileCount > 1 ? 's' : ''}`;
-          }
-        }
-      });
-    });
-  </script>
-</body>
+  </body>
 </html>
